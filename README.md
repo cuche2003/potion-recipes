@@ -1,2 +1,2 @@
-# potion-recipes
-A simple book of recipes for some potions. Made for experimenting with webpack.
+# restaurant-page
+A simple restaurant page, made for experimenting webpack.
