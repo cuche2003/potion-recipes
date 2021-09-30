@@ -1,9 +1,18 @@
 import {displayIntro} from './introModule.js';
 import {displayRecipes} from './recipesModule.js';
+import './style.css'; 
 
 (() => {    //init display
     const fragment = new DocumentFragment();
-    const content = document.getElementById('content');
+
+    const tint = document.createElement('div');
+    tint.id = 'bg-tint';
+    document.body.appendChild(tint);
+
+    const content = document.createElement('div');
+    content.id = 'content';
+    document.body.appendChild(content);
+
     const header = document.createElement('header');
 
     const title = document.createElement('h1');
@@ -23,10 +32,6 @@ import {displayRecipes} from './recipesModule.js';
     navRecipes.addEventListener('click', displayRecipes);
     navCtn.appendChild(navRecipes);
 
-    const navAbout = document.createElement('li');
-    navAbout.textContent = 'About';
-    navCtn.appendChild(navAbout);
-
     navbar.appendChild(navCtn);
     header.appendChild(navbar);
 
@@ -34,5 +39,4 @@ import {displayRecipes} from './recipesModule.js';
     content.appendChild(fragment);
 })();
 
-//displayIntro();
-displayRecipes();
+displayIntro();

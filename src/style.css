@@ -43,7 +43,9 @@ table {
 
 @font-face {
     font-family: witch-font;
-    src: url('witch-font.woff');
+    src: url('witch-font.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
 }
 html {
     background: url('background.jpg');

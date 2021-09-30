@@ -1,3 +1,5 @@
+import butterfly from './butterfly.gif';
+
 export function displayIntro () {
     const fragment = new DocumentFragment();
     const content = document.getElementById('content');
@@ -6,7 +8,7 @@ export function displayIntro () {
     const main = document.createElement('main');
 
     const avatar = document.createElement('img');
-    avatar.src = 'butterfly.gif';
+    avatar.src = butterfly;
     avatar.id = 'avatar';
     main.appendChild(avatar);
 
